@@ -1,0 +1,13 @@
+<ul>
+    {{#each albumSearch}}
+        <div class="album-search">
+            <h2 class="album-title">{{name}}</h2>
+            <picture>
+                <img src="{{images.0.url}}" alt="{{name}}"/>
+            </picture>
+            <button class="display-tracks-btn">
+            <a href="/album-tracks/{{id}}">View tracks</a>
+        </button>
+        </div>
+    {{/each}}
+</ul>

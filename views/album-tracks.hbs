@@ -1,0 +1,12 @@
+<h1>Tracks</h1>
+
+<div class="tracks-search">
+    <ul class="album-tracks">
+        {{#each tracksSearch}}
+            <li>
+                {{name}}
+                <audio controls src="{{preview_url}}"></audio>
+            </li>
+        {{/each}}
+    </ul>
+</div>
